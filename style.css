@@ -1,0 +1,79 @@
+body {
+  font-family: sans-serif;
+}
+
+body::before {
+  content: ' ';
+  width: 100%;
+  border-bottom: 1.34rem solid #bebebe;
+  display: block;
+}
+
+main {
+  max-width: 50rem;
+  margin: 5rem auto;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+h1 {
+  border-bottom: 0.5rem solid #dedede;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.button-link {
+  border: 0;
+  background: none;
+  color: #f542bf;
+  font-size: 1.3rem;
+  border-bottom: 0.2rem solid #f542bf;
+  padding: 0;
+}
+
+.action-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.action-bar-end {
+  align-self: flex-end;
+}
+
+#todos {
+  display: grid;
+  grid-gap: 3rem;
+}
+
+.todo {
+  display: grid;
+  grid-template-columns: 3rem 1fr 6rem;
+  grid-gap: 0.5rem;
+}
+
+.todo input[type="text"] {
+  border: 0;
+  padding: 0;
+  border-bottom: 3px solid #dedede;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.todo input[type="text"]::placeholder {
+  color: #dedede;
+}
+
+.todo input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  border: 2px solid #bebebe;
+  margin: 0.5rem;
+  -webkit-transition: background-color 0.2s, border-color 0.2s;
+}
+
+.todo input[type="checkbox"]:checked {
+  background-color: #fac5ea;
+  padding: 2px;
+  border-color: #f542bf;
+}

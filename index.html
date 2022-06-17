@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Todo App</title>
+  </head>
+  <body>
+    <main>
+      <h1>Todo App</h1>
+
+      <div id="todos"></div>
+
+      <div class="action-bar">
+        <button id="add-todo" class="action-bar-end button-link">
+          Add todo
+        </button>
+      </div>
+    </main>
+
+    <template id="template-todo">
+      <div class="todo" data-id="">
+        <input type="checkbox" />
+        <input type="text" placeholder="Wash the dishes" />
+        <button class="button-link">Remove</button>
+      </div>
+    </template>
+  </body>
+</html>
